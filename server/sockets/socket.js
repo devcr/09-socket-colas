@@ -42,7 +42,7 @@ io.on('connection', (client) => {
       callback(atenderTicket);
 
       // actulizar notificar cambios en los ultios 4
-      cliet.broadcast.emit('ultimos4', {
+      client.broadcast.emit('ultimos4', {
         ultimos4: ticketControl.getUltimos4()
       });
 
